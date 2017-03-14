@@ -11,6 +11,12 @@ header{
     margin:auto;
 }
 
+.headerImage{
+    background-image: url("images/fireworks.jpg");
+    width:1000px;
+    height:400px;
+}
+
 .logo{
     position:relative;
     top: 20px;
@@ -33,28 +39,29 @@ header nav li{
     bottom:25px;
 }
 
-header a:link{
+header nav a:link{
     text-decoration:none;
     font-family:Arial, Helvetica, sans-serif;
     font-size:16px;
     color:#515151;
 }
 
-header a:hover{
-    text-decoration:none;
+/*Don't know why the hover color isn't working*/
+
+header nav a:hover{
     font-family:Arial, Helvetica, sans-serif;
     font-size:16px;
     color:#d42551;
 }
 
-header a:visited{
+header nav a:visited{
     text-decoration:none;
     font-family:Arial, Helvetica, sans-serif;
     font-size:16px;
     color:#515151;
 }
 
-header a:active{
+header nav a:active{
     text-decoration:none;
     font-family:Arial, Helvetica, sans-serif;
     font-size:16px;
@@ -317,9 +324,6 @@ footer li{
     color:white;
     margin:80px;
 }
-
-.fa{
-    color:white;
 }
 
 #phone_number_text{
@@ -406,3 +410,245 @@ footer.gifts_parties {
     bottom:510px;
 }
 
+/*Contact Page*/
+
+.left_contact{
+    width:310px;
+    height:370px;
+    float:left;
+    display:inline-block;
+}
+
+.middle_contact{
+    width:310px;
+    height:430px;
+    float:left;
+    display:inline-block;
+}
+
+.right_contact{
+    width:310px;
+    height:300px;
+    float:left;
+    display:inline-block;
+    position:relative;
+    top:70px;
+    background-image: url("images/macarons-image.png");
+    background-repeat: no-repeat;
+    background-size: 230px;
+}
+
+.contact_container{
+    width:1000px;
+    height:450px;
+    justify-content:space-between;
+    display:flex;
+    position:relative;
+    padding-bottom:80px;
+}
+
+#contact_form_header{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:20px;
+    color:#6a6969;
+    font-weight: normal;
+    margin-bottom:20px;
+}
+
+input[type=text]{
+    width:310px;
+    height:35px;
+    background-color:#f5f5f5;
+    font-size:16px;
+    font-family:Arial, Helvetica, sans-serif;
+    border:none;
+    margin-bottom:15px;
+
+}
+
+::-webkit-input-placeholder {
+    color: #6a6969;
+    text-indent: 3px;
+}
+
+textarea{
+    width:310px;
+    height:70px;
+    background-color:#f5f5f5;
+    font-size:16px;
+    font-family:Arial, Helvetica, sans-serif;
+    border:none;
+}
+
+textarea::-webkit-input-placeholder{
+    color:#6a6969;
+    text-indent:3px;
+}
+
+input[type=submit]{
+    width:155px;
+    height:35px;
+    background-color:#f5f5f5;
+    font-size:16px;
+    color: #6a6969;
+    font-family:Arial, Helvetica, sans-serif;
+    border:none;
+    position:relative;
+    left:155px;
+    margin-top:10px;
+}
+
+/* iPhone 6 size Contact Page */
+
+@media screen and (max-width: 627px){
+
+    body{
+        width:100vw;
+        margin:auto;
+        height:100%;
+    }
+
+    header{
+        width:100vw;
+        height:15vh;
+        background-color:#fffabe;
+        margin:auto;
+    }
+
+    .logo{
+        position:relative;
+        left:40%;
+
+    }
+
+    header nav ul{
+        list-style: none;
+        position:relative;
+        left:-38vw;
+        top:5vh;
+    }
+
+    header nav li{
+        display:inline;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size:2em;
+        color:#515151;
+        padding-left:2vw;
+        padding-right:2vw;
+        text-align:center;
+    }
+
+    .top_image{
+        width:100vw;
+        height:auto;
+    }
+
+    p{
+        font-size:1.5em;
+    }
+
+    .left_contact{
+        width:100vw;
+        height:60vh;
+        display:block;
+        position:relative;
+        left:10vw;
+        border-bottom: 4px solid #f5f5f5;;
+    }
+
+    .middle_contact{
+        width:width:100vw;
+        height:auto;
+        display:block;
+        position:relative;
+        top:65vh;
+        right:66vw;
+    }
+
+    .right_contact{
+        visibility:hidden;
+    }
+
+    h1{
+        font-size:2em;
+    }
+
+    #contact_form_header{
+        font-size:2em;
+    }
+
+    input[type=text]{
+        width:75vw;
+        height:7vh;
+        background-color:#f5f5f5;
+        font-size:1.5em;
+        font-family:Arial, Helvetica, sans-serif;
+        border:none;
+        margin-bottom:15px;
+
+    }
+
+    ::-webkit-input-placeholder {
+        color: #6a6969;
+        text-indent: 3vw;
+    }
+
+    textarea{
+        width:75vw;
+        height:28vw;
+        font-size:1.5em;
+    }
+
+    textarea::-webkit-input-placeholder{
+        color:#6a6969;
+        text-indent:3vw;
+    }
+
+    input[type=submit]{
+        width:25vw;
+        height:7vh;
+        font-size:1.5em;
+        position:relative;
+        left:50vw;
+    }
+
+    footer{
+        width:100vw;
+        margin:auto;
+        height: 15vh;
+        background-color:#df5277;
+        clear:both;
+        position:relative;
+        top:90vh;
+    }
+
+    footer ul{
+        list-style: none;
+        text-align:center;
+        margin:0;
+        padding:0;
+        position:relative;
+        top:4vh;
+    }
+
+    footer li{
+        display:inline;
+        font-family:Arial, Helvetica, sans-serif;
+        color:white;
+        margin:4vw;
+    }
+
+
+    #phone_number_text{
+        position:relative;
+        right:20px;
+    }
+
+    .copyright_text{
+        color:white;
+        text-align:center;
+        position:relative;
+        top:6vh;
+        font-size:1em;
+    }
+}
