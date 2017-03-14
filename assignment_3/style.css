@@ -61,14 +61,15 @@ header a:active{
     color:#515151;
 }
 
-.top_image{
+.welcome_image{
     display:block;
     margin:auto;
 }
 
 main{
-    width:925px;
+    width:1000px;
     margin:auto;
+    height:100%;
     position:relative;
     top:200px;
     padding-bottom: 80px;
@@ -81,15 +82,13 @@ aside{
     bottom:25px;
 }
 
-section{
+section.home_page{
     float:right;
     display:block;
     position:relative;
     top:-150px;
     width:700px;
-
 }
-
 
 h1{
     font-family:Arial, Helvetica, sans-serif;
@@ -107,7 +106,7 @@ p{
     text-align:justify;
 }
 
-.bottom_section{
+.bottom_section_home_page{
     margin:auto;
     width:1000px;
     height:140px;
@@ -334,3 +333,76 @@ footer li{
     position:relative;
     top:10px;
 }
+
+.flavor_list_our_macarons{
+    font-family:Arial, Helvetica, sans-serif;
+    color:#6a6969;
+}
+
+section.our_macarons{
+    display:block;
+    position:relative;
+    top:-150px;
+    width:1000px;
+}
+
+aside.classics_our_macarons{
+    float:left;
+    display:block;
+    position:relative;
+    height:400px;
+    bottom:150px;
+    width:1000px;
+    background-image: url("images/our-macarons-background.png");
+    background-position: 100% 60%;
+}
+
+.bottom_section_our_macarons{
+    margin:auto;
+    width:1000px;
+    height:140px;
+    position:relative;
+    top:50px;
+    display:flex;
+    justify-content:space-between;
+    padding-bottom:80px;
+}
+
+.inline_email_text_gifts_parties{
+    color:#df5277;
+}
+
+.our_macarons ul{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+    color:#6a6969;
+}
+
+section.party_tower_gifts_parties {
+    display: block;
+    position: relative;
+    top: -150px;
+    width: 500px;
+}
+
+.party_tower_gifts_parties ul{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+    color:#6a6969;
+}
+
+.gifts_parties_background{
+    position:relative;
+    bottom:680px;
+    z-index:-1;
+}
+
+footer.gifts_parties {
+    width: 1000px;
+    margin: auto;
+    height: 80px;
+    background-color: #df5277;
+    position:relative;
+    bottom:510px;
+}
+
